@@ -13,26 +13,35 @@
 		<link type='text/css' href='lib/bootstrap/css/bootstrap.css' rel='stylesheet'>
 		
 		<!-- app -->
-		<script type='text/javascript' src='dispatcher.js'></script>
-		<script type='text/javascript' src='app.js'></script>
-		<script type='text/javascript' src='gui.js'></script>
+		<script type='text/javascript' src='chapter2.js'></script>
 		<link type='text/css' href='stylesheet.css' rel='stylesheet'>
 	</head>
 	<body>
 		<div id='title' class='panel panel-primary'>
 			<div class='panel-heading'>
-				<h2 class='panel-title'>Nynke</h2>
+				<h2 class='panel-title'>Hoofdstuk 2 - Lees alle boeken</h2>
 			</div>
 		</div>
 		
 		<div id='loading' class="progress">
-			<h2 class='panel-title'>Loading ...</h2>
-			<div id='loadbar' class="progress-bar" role="progressbar" style="width:70%">
+			<h2 class='panel-title'>Laden ...</h2>
+			<div id='loadbar' class="progress-bar" role="progressbar" style="width:0%">
 			</div>
 		</div>
 
-		<div id='activities' class='panel'>
-			test
+		<div id='book-game'>
+			<div class='book1'>
+				<img src='assets/book.png' class='book1' />
+				<img src='assets/book.png' class='book2' />
+				<img src='assets/book.png' class='book3' />
+				<img src='assets/book.png' class='book4' />
+				<img src='assets/book.png' class='book5' />
+				<img src='assets/book.png' class='book6' />
+			</div>
+		</div>
+
+		<div id='read-animation'>
+			<img src='assets/read.gif'/>
 		</div>
 	</body>
 </html>
