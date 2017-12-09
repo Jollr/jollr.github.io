@@ -106,8 +106,10 @@ function Game(ctx) {
   };
   
   this.registerMouse = function() {
-    self.board.div.onmousedown = self.onMouseDown;
-    self.board.div.onclick = function(){return false;};
+    //self.board.div.onmousedown = self.onMouseDown;
+    self.board.div.onmousedown = function(){return false;};
+    //self.board.div.onclick = self.onMouseDown;
+    $(self.board.div).on('click touchstart', self.onMouseDown);
     self.board.div.ondblclick = function(){return false;};
     self.board.div.oncontextmenu = function(){return false;};
   };
